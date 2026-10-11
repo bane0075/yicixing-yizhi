@@ -1,0 +1,9 @@
+# dsh-skill-updates bundle patch.
+#
+# One insert mounts the host half (the skill-interception seam, the update-check
+# engine and the settings API). The browser half rides the `dsh.client`
+# declaration in package.json, bound to the line whose name is this package.
+- insert:
+    - id: skill-updates
+      name: 'dsh-skill-updates'
+      config: {}

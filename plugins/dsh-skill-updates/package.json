@@ -1,0 +1,24 @@
+{
+  "name": "dsh-skill-updates",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Per-skill upstream update self-check: a switch per installed skill; when a switch is on, using that skill checks its upstream and tells the agent when it is behind.",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": []
+    }
+  },
+  "license": "MIT"
+}
